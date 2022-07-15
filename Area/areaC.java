@@ -13,6 +13,8 @@ import java.util.Scanner;
         if (r > 0){
             area = (int) (Math.PI * r * r);
             System.out.println (" El area del circulo es: "+ area);
+        }else{
+            System.out.println (" Error. Valor ingresado no valido");
         }
     }
  }
