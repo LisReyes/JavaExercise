@@ -5,7 +5,7 @@
  * Salida: "Seccion 1" "Seccion 2"
  * LisReyes
  */
-import java.util.Scanner;
+
  class Ejemplo2{
     char letra;
     public Ejemplo2(char y){

@@ -1,8 +1,4 @@
-/* Programa que realice el área de un circulo
- * Entrada: radio
- * Salida: Area
- * LisReyes
- */
+/* Programa que realice el área de un circulo* Entrada: radioSalida: AreaLisReyes*/
 import java.util.Scanner;
  class Ejemplo4 {
     int r;
