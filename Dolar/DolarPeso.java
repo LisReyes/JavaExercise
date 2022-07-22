@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /* Programa que convierte dolares a pesos
  * Entrada: Dolares
  * Salida: pesos
@@ -7,12 +9,12 @@ class Ejemplo8{
     double usd = 20.67;
     int dolar;
     double cm,cq,cd,cc,cci,cv,cdi,ccin,cu,mex;
-    public Ejemplo8(){
-
+    public Ejemplo8(int d){
+        dolar = d;
     }
 
     public void Convertir (){
-        if (dolar < 0){
+        if (dolar <= 0){
             System.out.println ("Debe ingresar un numero mayor a 0");
         }else{
             mex = (dolar * usd);
@@ -48,8 +50,12 @@ class Ejemplo8{
 }
 class Principal8{
     public static void main(String[]args){
-        Ejemplo8 ob1 = new Ejemplo8();
-        ob1.dolar = 180;
+        int dolar;
+        System.out.println (" Ingrese los billetes a convertir");
+        try (Scanner leer = new Scanner(System.in)) {
+            dolar = leer.nextInt();
+        }
+        Ejemplo8 ob1 = new Ejemplo8(dolar);
         ob1.Convertir();
     }
 }
